@@ -138,7 +138,7 @@ struct HomePageView: View {
            
         }
         .sheet(isPresented: $Showimages, content: {
-            BimageView(showimageview: $Showimages, imagename: _imagename )
+            BimageView(showImageView: $Showimages, imageName: _imagename )
         })
         .onAppear{
             let authuser = try? AuthenticationManager.shared.getAuthenticatedUser()

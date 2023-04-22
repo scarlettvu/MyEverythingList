@@ -13,13 +13,13 @@ struct BimageView: View {
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
-    @Binding var showimageview:Bool
-    @AppStorage("imagename") var imagename:String?
+    @Binding var showImageView : Bool
+    @AppStorage("imagename") var imageName: String?
     var body: some View {
         ScrollView(showsIndicators: false){
             VStack{
                 Button {
-                    showimageview = false
+                    showImageView = false
                 } label: {
                     Image(systemName: "xmark").bold()
                         .font(.title2)
@@ -35,8 +35,8 @@ struct BimageView: View {
                             .frame(width: 115, height: 190)
                             .cornerRadius(10)
                             .onTapGesture {
-                                imagename = items.imageName
-                                showimageview = false
+                                imageName = items.imageName
+                                showImageView = false
                             }
                     }
                    
@@ -50,6 +50,6 @@ struct BimageView: View {
 
 struct BimageView_Previews: PreviewProvider {
     static var previews: some View {
-        BimageView( showimageview: .constant(false))
+        BimageView( showImageView: .constant(false))
     }
 }
