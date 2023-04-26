@@ -11,7 +11,7 @@ struct AddNewList: View {
     @State  var inputText: String = ""
     @Binding var isPresented: Bool
     @State var iconselcted = "folder.fill"
-    var columns:[GridItem] = [
+    var columns: [GridItem] = [
         GridItem(.flexible()),
         GridItem(.flexible()),
         GridItem(.flexible()),
@@ -88,7 +88,6 @@ struct AddNewList: View {
             })
             .padding(.horizontal)
             .shadow(color: .black.opacity(0.2), radius: 20, x: 0, y: 0)
-        
     }
 }
 

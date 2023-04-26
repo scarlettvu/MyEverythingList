@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BimageView: View {
-    let columns :[GridItem] = [
+    let columns: [GridItem] = [
         GridItem(.flexible()),
         GridItem(.flexible()),
         GridItem(.flexible())
